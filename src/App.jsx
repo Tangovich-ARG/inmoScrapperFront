@@ -1,14 +1,23 @@
 import React from 'react';
-import Header from './components/Header'; // Importa el Header
-import TablaInmobiliaria from './components/TablaInmobiliaria'; // Asegúrate de que la ruta sea correcta
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Layout from './components/Layout';
+import TablaInmobiliaria from './components/TablaInmobiliaria';
 
-const App = () => {
+const About = () => <h2>Acerca de InmoScrapper</h2>;
+const Contact = () => <h2>Contacto</h2>;
+
+function App() {
   return (
-    <div>
-      <Header />
-      <TablaInmobiliaria />
-    </div>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<TablaInmobiliaria />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
-};
+}
 
 export default App;
