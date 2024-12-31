@@ -10,25 +10,6 @@ const Header = () => {
                         InmoScrapper
                     </Link>
                 </h1>
-                <nav>
-                    <ul className="flex space-x-4">
-                        <li>
-                            <Link to="/" className="hover:text-blue-200 transition-colors">
-                                Inicio
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/about" className="hover:text-blue-200 transition-colors">
-                                Acerca de
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/contact" className="hover:text-blue-200 transition-colors">
-                                Contacto
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
             </div>
         </header>
     );

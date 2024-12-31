@@ -23,8 +23,8 @@ const TablaInmobiliaria = () => {
     pageNumbers.push(i);
   }
 
-  // Límite de botones de página a mostrar
-  const range = 2; // Muestra 2 botones a la izquierda y 2 a la derecha de la página actual
+  // Límite de botones de página
+  const range = 2;
   const startPage = Math.max(currentPage - range, 1);
   const endPage = Math.min(currentPage + range, pageNumbers.length);
 
@@ -67,7 +67,7 @@ const TablaInmobiliaria = () => {
 
       <div className="flex justify-between items-center mt-4">
         <button
-          onClick={() => paginate(1)} // Ir a la primera página
+          onClick={() => paginate(1)}
           disabled={currentPage === 1}
           className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:opacity-50 disabled:cursor-not-allowed"
         >
@@ -105,7 +105,7 @@ const TablaInmobiliaria = () => {
           Siguiente
         </button>
         <button
-          onClick={() => paginate(pageNumbers.length)} // Ir a la última página
+          onClick={() => paginate(pageNumbers.length)}
           disabled={currentPage === pageNumbers.length}
           className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:opacity-50 disabled:cursor-not-allowed"
         >

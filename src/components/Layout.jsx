@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
             </main>
             <footer className="bg-blue-600 text-white py-4">
                 <div className="w-full px-4 text-center">
-                    © 2023 InmoScrapper. Todos los derechos reservados.
+                    InmoScrapper
                 </div>
             </footer>
         </div>
